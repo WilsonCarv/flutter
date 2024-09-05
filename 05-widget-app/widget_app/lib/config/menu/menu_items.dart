@@ -24,6 +24,6 @@ const List<MenuItem> menuItems = [
     title: 'Cards',
     subTitle: 'Cards in Flutter',
     icon: Icons.credit_card,
-    route: '/card',
+    route: '/cards',
   ),
 ];
