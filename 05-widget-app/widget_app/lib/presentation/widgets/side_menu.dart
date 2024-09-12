@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:widget_app/config/menu/menu_items.dart';
 
 class SideMenu extends StatefulWidget {
@@ -19,18 +20,21 @@ class _SideMenuState extends State<SideMenu> {
           setState(() {
             navDrawerIndex = value;
           });
+          final menuItem = menuItems[value];
+          context.push(menuItem.route);
         },
         children: [
           Padding(
             padding: EdgeInsets.fromLTRB(28, hasNotch ? 10 : 20, 16, 10),
             child: const Text('Main'),
           ),
-          ...menuItems.sublist(0,3).map((item) => NavigationDrawerDestination(
+          ...menuItems.sublist(0, 3).map((item) => NavigationDrawerDestination(
                 icon: Icon(item.icon),
                 label: Text(item.title),
               )),
-              const Padding(padding:EdgeInsets.fromLTRB(28, 16, 16, 10), child: Divider()),
-              const Padding(
+          const Padding(
+              padding: EdgeInsets.fromLTRB(28, 16, 16, 10), child: Divider()),
+          const Padding(
             padding: EdgeInsets.fromLTRB(28, 10, 16, 10),
             child: Text('Other options'),
           ),
@@ -38,8 +42,10 @@ class _SideMenuState extends State<SideMenu> {
                 icon: Icon(item.icon),
                 label: Text(item.title),
               )),
-              const Padding(padding:EdgeInsets.fromLTRB(28, 16, 16, 10), child: Divider(),),
-
+          const Padding(
+            padding: EdgeInsets.fromLTRB(28, 16, 16, 10),
+            child: Divider(),
+          ),
         ]);
   }
 }
