@@ -57,8 +57,8 @@ const List<MenuItem> menuItems = [
       route: '/infinite',
       icon: Icons.list_alt_rounded),
   MenuItem(
-      title: 'Counter',
-      subTitle: 'Counter screen',
+      title: 'Riverpod Counter',
+      subTitle: 'Counter screen - riverpod',
       icon: Icons.abc_outlined,
       route: '/counter')
 ];
