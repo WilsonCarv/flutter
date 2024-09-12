@@ -27,45 +27,38 @@ const List<MenuItem> menuItems = [
     route: '/cards',
   ),
   MenuItem(
-    title: 'Progress Indicators', 
-    subTitle: 'Progress Indicators in Flutter', 
-    route: '/progress', 
-    icon: Icons.refresh_rounded
-  ),
-
+      title: 'Progress Indicators',
+      subTitle: 'Progress Indicators in Flutter',
+      route: '/progress',
+      icon: Icons.refresh_rounded),
   MenuItem(
-    title: 'Snackbars and Dialogs', 
-    subTitle: 'Snackbars and Dialogs in Flutter', 
-    route: '/snackbars', 
-    icon: Icons.info_outline
-  ),
-
+      title: 'Snackbars and Dialogs',
+      subTitle: 'Snackbars and Dialogs in Flutter',
+      route: '/snackbars',
+      icon: Icons.info_outline),
   MenuItem(
-    title: 'Animated container', 
-    subTitle: 'Animated Stateful widget', 
-    route: '/animated', 
-    icon: Icons.check_box_outline_blank_rounded
-  ),
-
+      title: 'Animated container',
+      subTitle: 'Animated Stateful widget',
+      route: '/animated',
+      icon: Icons.check_box_outline_blank_rounded),
   MenuItem(
-    title: 'UI Controls + Tiles', 
-    subTitle: 'UI Controls + Tiles', 
-    route: '/ui-controls', 
-    icon: Icons.car_rental_outlined
-  ),
-
+      title: 'UI Controls + Tiles',
+      subTitle: 'UI Controls + Tiles',
+      route: '/ui-controls',
+      icon: Icons.car_rental_outlined),
   MenuItem(
-    title: 'Onboarding', 
-    subTitle: 'Onboarding Screen', 
-    route: '/tutorial', 
-    icon: Icons.accessible_rounded
-  ),
-
+      title: 'Onboarding',
+      subTitle: 'Onboarding Screen',
+      route: '/tutorial',
+      icon: Icons.accessible_rounded),
   MenuItem(
-    title: 'InfiniteScroll y Pull', 
-    subTitle: 'InfiniteScroll and pull to refresh', 
-    route: '/infinite', 
-    icon: Icons.list_alt_rounded
-  ),
-
+      title: 'InfiniteScroll y Pull',
+      subTitle: 'InfiniteScroll and pull to refresh',
+      route: '/infinite',
+      icon: Icons.list_alt_rounded),
+  MenuItem(
+      title: 'Counter',
+      subTitle: 'Counter screen',
+      icon: Icons.abc_outlined,
+      route: '/counter')
 ];
