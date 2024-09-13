@@ -60,5 +60,10 @@ const List<MenuItem> menuItems = [
       title: 'Riverpod Counter',
       subTitle: 'Counter screen - riverpod',
       icon: Icons.abc_outlined,
-      route: '/counter')
+      route: '/counter'),
+  MenuItem(
+      title: 'Theme Changer',
+      subTitle: 'Theme changer screen',
+      icon: Icons.abc_outlined,
+      route: '/theme-changer'),
 ];
