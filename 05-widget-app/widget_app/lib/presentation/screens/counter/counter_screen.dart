@@ -20,6 +20,7 @@ class CounterScreen extends ConsumerWidget {
         child: const Icon(Icons.arrow_back_ios_new_rounded),
         onPressed: () {
           ref.read(counterProvider.notifier).state++;
+          //ref.read(counterProvider.notifier).update((state)=> state+1);
         },
       ),
     );
