@@ -1,8 +1,9 @@
 import 'package:cinemapedia_app/presentation/providers/movies/movies_providers.dart';
-import 'package:cinemapedia_app/presentation/providers/movies/movies_slideshow_provider.dart';
 import 'package:cinemapedia_app/presentation/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+
+import '../../providers/movies/movies_slideshow_provider.dart';
 
 class HomeScreen extends StatelessWidget {
   static const name = 'home_screen';
