@@ -8,6 +8,7 @@ class CustomAppBar extends StatelessWidget {
     final colors = Theme.of(context).colorScheme;
     final titleStyle = Theme.of(context).textTheme.titleMedium;
     return SafeArea(
+      bottom: false,
         child: Padding(
       padding: const EdgeInsets.symmetric(horizontal: 10),
       child: SizedBox(
