@@ -6,7 +6,7 @@ import 'package:cinemapedia_app/presentation/widgets/widgets.dart';
 
 
 class HomeView extends ConsumerStatefulWidget {
-  const HomeView();
+  const HomeView({super.key});
 
   @override
   HomeViewState createState() => HomeViewState();
