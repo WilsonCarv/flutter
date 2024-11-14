@@ -24,6 +24,14 @@ class HomeScreen extends StatelessWidget {
             context.push('/block')
           },
         ),
+        ListTile(
+          title: const Text('Register'),
+          subtitle: const Text('Register form'),
+          trailing: const Icon(Icons.chevron_right),
+          onTap: () => {
+            context.push('/register')
+          }
+        )
       ]),
     );
   }
